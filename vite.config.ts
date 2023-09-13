@@ -9,7 +9,7 @@ import { libInjectCss } from "vite-plugin-lib-inject-css";
 export default defineConfig({
     plugins: [react(), libInjectCss(), dts({ include: ["lib"] })],
     build: {
-        copyPublicDir: false,
+        copyPublicDir: true,
         lib: {
             entry: resolve(__dirname, "lib/main.ts"),
             formats: ["es"],

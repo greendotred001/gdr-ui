@@ -1,39 +1,25 @@
 //import { useState } from "react";
 //import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
+import { NavBar } from "../lib/components/NavBar";
 
 // use below for developement of library
-// import { Root, PageRow } from "../lib/main";
+import { Root } from "../lib/main";
 // uncomment to test from dist lib after running npm run build
 // import { Button, Label } from "../";
 
-import "./styles/index.css"; // same as using <link ref="stylesheet" href="./styles/app.css" />
+//import "./styles/index.css"; // same as using <link ref="stylesheet" href="./styles/app.css" />
 
 function App() {
     return (
         <>
-            <header>
-                <img src={viteLogo} />
-                <div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Speakers</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+            <Root>
+                <NavBar children={<></>} />
 
-            <main>
-                <p>CSS Things</p>
-            </main>
+                <main>
+                    <p>CSS Things</p>
+                </main>
+            </Root>
         </>
     );
 }

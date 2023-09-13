@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./styles.module.css";
+import "../../styles/base.css";
 
 export function Root({ children }: { children: React.ReactNode }) {
-    return <div className={style.gdrMain}>{children}</div>;
+    return <div>{children}</div>;
 }

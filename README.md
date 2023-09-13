@@ -24,6 +24,9 @@ If the dependancy is newer that what the library
 
 ## Usefull links
 
+[CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+[CSS Grid Generator](https://cssgrid-generator.netlify.app/)
+
 # FONT FAMILY
 
 [Google Fonts](https://fonts.google.com)  
