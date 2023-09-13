@@ -1,27 +1,34 @@
-# React + TypeScript + Vite
+# GreenDotRed UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Publish
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+npm publish --access public
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Test UI
+
+```bash
+npm run dev
+```
+
+## Vite Build
+
+```bash
+npm run build
+```
+
+## Trouble Shooting
+
+If the dependancy is newer that what the library
+
+## Usefull links
+
+# FONT FAMILY
+
+[Google Fonts](https://fonts.google.com)  
+[Training Video](https://www.bing.com/videos/search?q=npm+package+for+UI&docid=603513948180539029&mid=6F9ECF35776C67F327346F9ECF35776C67F32734&view=detail&FORM=VIRE)  
+[Styled Components](https://styled-components.com)
+[Storybook](https://storybook.js.org/)  
+[Creating a TS Library](https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe)
+[Creating Library with Vite](https://dev.to/receter/how-to-create-a-react-component-library-using-vites-library-mode-4lma)
