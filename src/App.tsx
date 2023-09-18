@@ -4,21 +4,32 @@
 import { NavBar } from "../lib/components/NavBar";
 
 // use below for developement of library
-import { Root } from "../lib/main";
+import { Root, PageRow } from "../lib/main";
 // uncomment to test from dist lib after running npm run build
-// import { Button, Label } from "../";
+// import { Root } from "../";
 
-//import "./styles/index.css"; // same as using <link ref="stylesheet" href="./styles/app.css" />
+const NavItems = [
+    { title: "About", link: "#" },
+    { title: "Contact", link: "#" },
+];
 
 function App() {
     return (
         <>
-            <Root>
-                <NavBar children={<></>} />
-
-                <main>
-                    <p>CSS Things</p>
-                </main>
+            <Root
+                header={<NavBar navItems={NavItems}></NavBar>}
+                footer={
+                    <div>
+                        <p>footer</p>
+                    </div>
+                }
+            >
+                <PageRow />
+                <PageRow />
+                <PageRow />
+                <PageRow />
+                <PageRow />
+                <PageRow />
             </Root>
         </>
     );

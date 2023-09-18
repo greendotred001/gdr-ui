@@ -1,0 +1,38 @@
+
+.nav__container {    
+    display: grid;
+    font-family: "Lobster", sans-serif;
+    grid-template-columns: 150px 1fr 50px;
+    grid-template-rows: 1fr;
+    align-items: center;    
+    grid-template-areas: "logo nav auth";        
+    background:  rgba(0,0,0,0.1); 
+    padding: 10px;  
+}
+
+.nav__container .logo {
+    grid-area: logo;    
+}
+
+.nav__container .nav {
+    display: inline-block;
+    grid-area: "nav";
+    justify-self: end;
+}
+
+.nav__container .nav__list {
+    list-style: none;
+    display: flex;    
+}
+
+.nav__container .nav__list_item {
+    margin-inline-end: 36px;
+    font-size: 20px;
+}
+
+
+.nav__container .nav__list_item:hover {    
+    cursor: pointer;
+    filter: blur(1px);
+}
+

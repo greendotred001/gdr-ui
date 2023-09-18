@@ -1,3 +1,19 @@
-.pageRow{
-    background-color: blue;
+.pageRow{    
+    height: 'calc(100vh - 80px)';
+    width: '100vw';
 }
+
+.pageRow__container {
+    position: "relative";
+    z-index: 0;
+}
+
+.pageRow__background {
+    position: "absolute"
+}
+
+.pageRow_contents {
+    position: "relative"; 
+    z-Index: "10";
+}
+

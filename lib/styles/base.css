@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&family=Lobster&display=swap');
+
 :root {
-    --color-primary: #ff7b54;
-    --color-text-on-primary: #ffffff;
+    --color-primary: #dabfb7;
+    --color-secondary: #97b7be;
+    --color-tertiary: #b76464;
+    --color-text-on-primary: #413f3b;
+    --color-text-on-secondary: #3d3a3a;
+    --color-text-on-tertiary: #f8fafa;
+    --header-height: 120px;
     --font-family: "Inter", sans-serif;
 }
 
 body {
     background-color: var(--color-primary);
     color: var(--color-text-on-primary);
-    font-family: var(--font-family);     
+    font-family: var(--font-family);       
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -16,42 +26,27 @@ a {
    text-decoration: none;
 }
 
-.container {
+.root {        
+    height: 100vh;
     display: grid;
-    grid-template-columns: 180px 1fr;
-    grid-template-rows: 80px 1fr 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--header-height) 1fr 120px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
-.header {    
+.header {
     display: grid;
-    grid-template-columns: 1fr 3fr 34px;
-    grid-template-rows: 1fr;
-    align-items: center;    
-    grid-template-areas: "logo nav shopping-cart";
-    padding: 0 60px;
+    position: relative;
 }
 
-.header__link {
-    font-size: 40px;
-    font-weight: bold;
+.content {    
+    display: grid;
+    margin-top: calc(var(--header-height) * -1);
 }
 
-header .logo {
-    grid-area: logo;
+.footer {
+    display: grid;
+    background-color: var(--color-secondary);    
 }
 
-.nav {
-    display: inline-block;
-    grid-area: "nav";
-    justify-self: end;
-}
-
-.nav__list {
-    list-style: none;
-    display: flex;    
-}
-
-.nav__list-item {
-    margin-inline-end: 36px;
-    font-size: 20px;
-}

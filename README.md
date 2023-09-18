@@ -29,7 +29,10 @@ If the dependancy is newer that what the library
 
 # FONT FAMILY
 
-[Google Fonts](https://fonts.google.com)  
+[Google Fonts](https://fonts.google.com)
+
+[Dribble](https://www.dribbble.com)  
+[Framer](https://www.framer.com)  
 [Training Video](https://www.bing.com/videos/search?q=npm+package+for+UI&docid=603513948180539029&mid=6F9ECF35776C67F327346F9ECF35776C67F32734&view=detail&FORM=VIRE)  
 [Styled Components](https://styled-components.com)
 [Storybook](https://storybook.js.org/)  

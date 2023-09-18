@@ -1,28 +1,22 @@
 import React from "react";
 import styles from "./styles.module.css";
+import cityScapeSVG from "/cityscape.svg";
 
-export function PageRow({
-    children,
-    backgroundImg,
-}: {
-    children: React.ReactNode;
-    backgroundImg: React.ReactNode;
-}) {
+export type PageRowProps = {
+    children?: React.ReactNode;
+    backgroundImg?: string;
+};
+
+export function PageRow({ children, backgroundImg }: PageRowProps) {
+    backgroundImg = backgroundImg ? backgroundImg : cityScapeSVG;
+
     return (
-        <div
-            className={styles.pageRow}
-            style={{
-                height: `calc(100vh - 80px)`,
-                width: `100vw`,
-            }}
-        >
-            <div style={{ position: "relative", zIndex: "0" }}>
-                <div style={{ position: "absolute", zIndex: "0" }}>
-                    {backgroundImg}
+        <div className={styles.pageRow}>
+            <div className={styles.pagerow__container}>
+                <div className={styles.pagerow__background}>
+                    <img src={backgroundImg} alt="bg" />
                 </div>
-                <div style={{ position: "relative", zIndex: "10" }}>
-                    {children}
-                </div>
+                <div className={styles.pagerow__contents}>{children}</div>
             </div>
         </div>
     );

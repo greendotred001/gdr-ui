@@ -1,4 +1,15 @@
 .button {
     padding: 1rem;
-    background-color: yellow;
+    margin: 1rem;    
+    background-color: var(--color-tertiary);
+    color: var(--color-text-on-tertiary);
+    cursor: pointer;
+    border:none;
+    border-radius: 10px;    
+    font-weight: 100;    
+    font-style:normal;
+}
+
+.button:hover {
+    filter: brightness(.85);
 }
