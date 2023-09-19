@@ -1,4 +1,4 @@
-# GreenDotRed UI
+# GreenDotRed UI 1.0.6
 
 ## Publish
 
