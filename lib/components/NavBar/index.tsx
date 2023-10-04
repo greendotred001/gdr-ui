@@ -1,5 +1,5 @@
 import React from "react";
-import logoPlane from "/Logo-plane.svg";
+import logoPlane from "../../Logo-plane.svg";
 import styles from "./styles.module.css";
 
 export interface INavItem {

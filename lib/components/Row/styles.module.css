@@ -1,0 +1,10 @@
+.row {
+    position: relative;
+    padding: 10px;    
+    background-color: white;
+}
+
+.row .background {
+    position: absolute;
+    z-index: 0;    
+}

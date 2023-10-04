@@ -17,7 +17,7 @@ export default defineConfig({
         rollupOptions: {
             external: ["react", "react/jsx-runtime"],
             input: Object.fromEntries(
-                glob.sync("lib/**/*.{ts,tsx}").map((file) => [
+                glob.sync("lib/**/*.{ts,tsx,svg}").map((file) => [
                     // The name of the entry point
                     // lib/nested/foo.ts becomes nested/foo
                     relative(

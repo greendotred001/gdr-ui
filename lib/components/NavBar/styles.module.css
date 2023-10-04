@@ -1,5 +1,8 @@
 
-.nav__container {    
+.nav__container {  
+    position: fixed;  
+    width: 100vw;
+    height: 80px;
     display: grid;
     font-family: "Lobster", sans-serif;
     grid-template-columns: 150px 1fr 50px;
@@ -7,11 +10,12 @@
     align-items: center;    
     grid-template-areas: "logo nav auth";        
     background:  rgba(0,0,0,0.1); 
-    padding: 10px;  
+    padding: 10px; 
+    z-index: 10;     
 }
 
 .nav__container .logo {
-    grid-area: logo;    
+    grid-area: logo;      
 }
 
 .nav__container .nav {
@@ -30,9 +34,7 @@
     font-size: 20px;
 }
 
-
 .nav__container .nav__list_item:hover {    
-    cursor: pointer;
-    filter: blur(1px);
+    cursor: pointer;    
 }
 

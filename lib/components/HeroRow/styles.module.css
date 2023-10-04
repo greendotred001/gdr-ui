@@ -1,0 +1,32 @@
+.row {        
+    display: flex;
+    position: relative;
+    justify-content: center;              
+    height: 100vh;
+}
+
+.row .backgroundImage {
+    position: absolute;
+    z-index: 0;    
+}
+
+.row .searchImage {
+    margin-top: 100px;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;    
+    width: 750px;    
+}
+
+.row .content {
+    margin-top: 200px;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;    
+    width: 650px;    
+    text-align: center;
+    padding: 15px;
+}
+

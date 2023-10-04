@@ -8,12 +8,13 @@
     --color-text-on-primary: #413f3b;
     --color-text-on-secondary: #3d3a3a;
     --color-text-on-tertiary: #f8fafa;
+    --color-background: #244b47;
     --header-height: 120px;
     --font-family: "Inter", sans-serif;
 }
 
 body {
-    background-color: var(--color-primary);
+    background-color: var(--color-background);
     color: var(--color-text-on-primary);
     font-family: var(--font-family);       
     font-weight: 400;
@@ -30,23 +31,25 @@ a {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: var(--header-height) 1fr 120px;
+    grid-template-rows: var(--header-height) 1fr 120px;    
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 0px;    
 }
 
 .header {
     display: grid;
-    position: relative;
+    position: relative;    
 }
 
 .content {    
     display: grid;
     margin-top: calc(var(--header-height) * -1);
+    height: "100%";
+    position: relative;    
 }
 
 .footer {
     display: grid;
-    background-color: var(--color-secondary);    
+    background-color: var(--color-secondary);        
 }
 
